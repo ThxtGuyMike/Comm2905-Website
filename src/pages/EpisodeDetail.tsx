@@ -7,6 +7,7 @@ import { ROUTE_PATHS, formatDate, getEpisodeRoute } from '@/lib/index';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { FeedbackSection } from '@/components/FeedbackSection';
 
 export default function EpisodeDetail() {
   const { id } = useParams<{ id: string }>();
@@ -115,6 +116,11 @@ export default function EpisodeDetail() {
             </div>
           </div>
         </Card>
+
+
+        <div className="mb-10">
+          <FeedbackSection episodeId={episode.id} episodeTitle={episode.title} />
+        </div>
 
         <div className="flex justify-between items-center gap-4">
           <Button variant="outline" disabled={!previousEpisode} asChild={!!previousEpisode} className="flex-1">
