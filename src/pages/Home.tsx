@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
-            src={featuredEpisode.pages[0].imageUrl}
-            alt="Inside the Pressure cover art"
-            className="w-full h-full object-cover opacity-20"
+            src="/images/hero-loop.gif"
+            alt=""
+            className="w-full h-full object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/35 to-background/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/68 via-background/32 to-background/86" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
