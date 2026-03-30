@@ -15,12 +15,17 @@ export default function Home() {
     <div className="min-h-screen">
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0" aria-hidden="true">
-          <img
-            src="/images/hero-loop.gif"
-            alt=""
-            className="w-full h-full object-cover opacity-35"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/68 via-background/32 to-background/86" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover opacity-60"
+          >
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/58 via-background/20 to-background/80" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
